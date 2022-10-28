@@ -1,44 +1,120 @@
-function populateLangs(partial = true) {
+const {populateLangs, updateLangs} = (() => {
+  const oldElements = Array.from(document.getElementsByTagName("input"));
+  const elements = [];
+  const hidden = document.createDocumentFragment();
+
   const list = document.getElementById("langs");
 
-  fetch("/data/langs.json").then(n=>n.json()).then(n => {
-    window.LANGS = n;
-    const tags = Array.from(document.getElementsByTagName("input")).filter(n=>n.checked).map(n=>n.value).filter(n => window.LANGS.includes(n));
+  let isPartial;
 
-    list.innerHTML = "";
+  function populateLangs(partial = true, callback = null) {
+    isPartial = partial;
 
-    for(let i in n) {
-      const lang = n[i];
-      const chk = document.createElement("input");
-      chk.setAttribute("type", "checkbox");
-      chk.setAttribute("id", "lang" + i);
-      chk.setAttribute("name", "lang" + i);
-      chk.setAttribute("value", lang);
-      if(tags.includes(lang)) chk.checked = true;
+    fetch("/data/langs.json").then(n=>n.json()).then(n => {
+      window.LANGS = n;
+      list.innerHTML = "";
 
-      const label = document.createElement("label");
-      label.setAttribute("for", "lang" + i);
-      label.textContent = lang;
-      list.append(chk, label, document.createElement("BR"));
-      chk.addEventListener("click", refreshProjects);
+      for(let i in n) {
+        const lang = n[i];
+        const chk = document.createElement("input");
+        chk.setAttribute("type", "checkbox");
+        chk.setAttribute("id", "lang" + i);
+        chk.setAttribute("name", "lang" + i);
+        chk.setAttribute("value", lang);
 
-      if(partial && i > 10) break;
-    }
+        const label = document.createElement("label");
+        label.setAttribute("for", "lang" + i);
+        label.textContent = lang;
+        chk.addEventListener("click", () => {
+          window.history.replaceState(null, null, '?tags=' + Array.from(elements).map(n=>n[0]).concat(oldElements).filter(n => n.checked).map(n => n.value));
+          refreshProjects();
+          updateLangs(isPartial);
+        });
 
-    if(partial) {
-      const btn = document.createElement("a");
-      btn.href = "javascript:populateLangs(false);";
-      btn.textContent = "Load more...";
-      list.append(btn);
-    } else {
-      const btn = document.createElement("a");
-      btn.href = "javascript:populateLangs();";
-      btn.textContent = "Load less...";
-      list.append(btn);
-    }
+        const entireCheckbox = [chk, label, document.createElement("BR")];
+        elements.push(entireCheckbox);
+
+        if(partial && i > 10) {
+          hidden.append(...entireCheckbox);
+        } else {
+          list.append(...entireCheckbox);
+        }
+      }
+
+      if(partial) {
+        const btn = document.createElement("a");
+        btn.href = "javascript:updateLangs(false);";
+        btn.textContent = "Load more...";
+        list.append(btn);
+      } else {
+        const btn = document.createElement("a");
+        btn.href = "javascript:updateLangs();";
+        btn.textContent = "Load less...";
+        list.append(btn);
+      }
+
+      if(callback != null) callback(elements, oldElements);
+    });
+  }
+
+
+  function updateLangs(partial = true, callback = null) {
+    isPartial = partial;
+
+    fetch("/data/langs.json").then(n=>n.json()).then(n => {
+      const hiddenTemp = document.createDocumentFragment();
+      hiddenTemp.append(...(Array.from(list.children).filter(el => el.tagName != "A")));
+      hiddenTemp.append(...Array.from(hidden.children));
+      list.innerHTML = "";
+
+      let j = 0;
+      for(let entireCheckbox of elements) {
+        if(entireCheckbox[0].checked) {
+          list.append(...entireCheckbox);
+          j++;
+        }
+      }
+
+      for(let entireCheckbox of elements) {
+        if(entireCheckbox[0].checked) continue;
+
+        if(partial && j > 10) {
+          hidden.append(...entireCheckbox);
+        } else {
+          list.append(...entireCheckbox);
+        }
+        j++;
+      }
+
+      if(partial) {
+        const btn = document.createElement("a");
+        btn.href = "javascript:updateLangs(false);";
+        btn.textContent = "Load more...";
+        list.append(btn);
+      } else {
+        const btn = document.createElement("a");
+        btn.href = "javascript:updateLangs();";
+        btn.textContent = "Load less...";
+        list.append(btn);
+      }
+
+      if(callback != null) callback(elements, oldElements);
+    });
+  }
+
+
+
+  Array.from(document.getElementsByTagName("input")).forEach(checkbox => {
+    checkbox.addEventListener("click", () => {
+      window.history.replaceState(null, null, '?tags=' + Array.from(elements).map(n=>n[0]).concat(oldElements).filter(n => n.checked).map(n => n.value));
+      refreshProjects();
+    });
   });
-}
 
+
+
+  return {populateLangs, updateLangs};
+})();
 
 
 function createTile(data) {
@@ -110,7 +186,7 @@ function refreshProjects() {
       document.getElementsByClassName("main")[0].append(...n.map(createTile));
     else {
       const filtered = n.filter(item => {
-        if(["GitHub", "Scratch", "Repl.it"].filter(n => tags.includes(n)).length > 0)
+        if(["GitHub", "Scratch", "Repl.it", "Physical"].filter(n => tags.includes(n)).length > 0)
           for(let site of item.websites) {
             if(!tags.includes(site)) return false;
           }
@@ -136,10 +212,28 @@ function refreshProjects() {
 }
 
 
-Array.from(document.getElementsByTagName("input")).forEach(checkbox => {
-  checkbox.addEventListener("click", refreshProjects);
+const parseQuery = ((elements, oldElements) => {
+  const parsedQuery = location.search.replace("?", "").split("&").map(n=>n.split("=").map(n=>decodeURIComponent(n)));
+
+  const query = {};
+
+  for(let item of parsedQuery) {
+    query[item[0]] = item[1];
+  }
+
+  if("tags" in query) {
+    query.tags.split(",").forEach(tag => {
+      const inputs = Array.from(elements).map(n => n[0]).concat(oldElements);
+
+      const el = inputs.find(item => item.getAttribute("value") == tag);
+
+      if(el)
+        el.checked = true;
+    });
+  }
+
+  updateLangs(true, refreshProjects);
 });
 
 
-populateLangs();
-refreshProjects();
+populateLangs(true, parseQuery);
