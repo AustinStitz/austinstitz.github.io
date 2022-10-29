@@ -187,6 +187,8 @@ html, body {
   display: none;
   position: absolute;
   background-color: #dddddd;
+  left: 5px;
+  transform: translateX(-25%);
   bottom: 50px;
   z-index: 0;
   border-radius: 15px;
