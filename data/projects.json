@@ -30,5 +30,33 @@
     ],
     "images": ["/assets/serverfire/demosite.png", "/assets/serverfire/npmpage.png"],
     "score": 100
+  },
+  {
+    "title": "Self-XSS Protection Feature",
+    "websites": ["GitHub"],
+    "status": "Maintained",
+    "types": ["Software"],
+    "langs": [
+      "JavaScript"
+    ],
+    "thumbnail": "/assets/github-logo.png",
+    "description": "Too often, people run code themselves (through the JavaScript console, bookmarklets, or by pressing XSS-infected buttons or links) that contains malicious HTTP requests, such as cookie grabbers or malicious in-site endpoints, to obtain access to user accounts. Or even, there is simply an XSS vulnerability in the website that enables code to be run regardless of how careful the user is. Most of the harm is when a request is made without the user's knowledge. This script enables the user to know what requests are being made and to decide whether or not to allow them.\n\nThis Self-XSS Protection script is a single-file script that can be added into any website to improve security for users. The owner of the website just needs to update the script to allow certain endpoints, using the documentation in the GitHub repository, and when any non-native request is made, the user will see an alert box to confirm or deny the request. If confirmed, similar requests will always be allowed, but if denied, the request will be blocked.\n\nThis project started due to a discussion on the ~$[Scratch forums](https://scratch.mit.edu/discuss) about the potential banning of sharing bookmarklets. As a maker of many bookmarklets, I suggested that instead of banning them, a new security feature be implemented to prevent their dangers while maintaining their functionality. Then, I created this GitHub repository! After making this, I talked to ~$[@Paddle2See](https://scratch.mit.edu/users/Paddle2See), a Scratch Team member, to ask about its potential implementation, and he discussed it with the engineering team. Unfortunately, the idea was rejected due to the overhead required to implement the script on every page, but I still maintain this project as a security feature open to use on other websites!",
+    "links": [
+      {
+        "label": "GitHub Repository: ",
+        "url": "https://github.com/AmazingMech2418/Self-XSS-Protection"
+      },
+      {
+        "label": "Repl.it Demo: ",
+        "url": "https://replit.com/@AustinStitz/XSS-Protection-Demo"
+      },
+      {
+        "label": "Demo Website: ",
+        "url": "https://xss-protection-demo.austinstitz.repl.co/"
+      }
+    ],
+    "images": ["/assets/xss/xssdemo.png", "/assets/xss/xssrepo.png"],
+    "score": 100
   }
+
 ]
