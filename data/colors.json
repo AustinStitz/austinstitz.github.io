@@ -1,0 +1,92 @@
+[
+  {
+    "tag": "GitHub",
+    "color": "black"
+  },
+  {
+    "tag": "Scratch",
+    "color": "orange"
+  },
+  {
+    "tag": "Repl.it",
+    "color": "lime"
+  },
+  {
+    "tag": "Physical",
+    "color": "blue"
+  },
+  {
+    "tag": "Maintained",
+    "color": "lime"
+  },
+  {
+    "tag": "Completed",
+    "color": "yellow",
+    "text": "black"
+  },
+  {
+    "tag": "Abandoned",
+    "color": "red"
+  },
+  {
+    "tag": "In-Progress",
+    "color": "gray"
+  },
+  {"tag":"JavaScript","color":"#f1e05a","text":"black"},
+  {"tag":"Python","color":"#3572A5"},
+  {"tag":"Haskell","color":"#5e5086"},
+  {"tag":"Java","color":"#b07219"},
+  {"tag":"C++","color":"#f34b7d"},
+  {"tag":"C","color":"#555555"},
+  {"tag":"Bash","color":"#89e051"},
+  {"tag":"Batchfile","color":"#C1F12E","text":"black"},
+  {"tag":"Go","color":"#00ADD8"},
+  {"tag":"Fortran","color":"#4d41b1"},
+  {"tag":"Forth","color":"#341708"},
+  {"tag":"Rust","color":"#dea584"},
+  {"tag":"Scala","color":"#c22d40"},
+  {"tag":"Swift","color":"#F05138"},
+  {"tag":"Kotlin","color":"#A97BFF"},
+  {"tag":"Lisp","color":"gray"},
+  {"tag":"BASIC","color":"#ff0000"},
+  {"tag":"Ruby/Crystal","color":"#701516"},
+  {"tag":"C#","color":"#178600"},
+  {"tag":"D","color":"#ba595e"},
+  {"tag":"Dart","color":"#00B4AB"},
+  {"tag":"Elixir","color":"#6e4a7e"},
+  {"tag":"Erlang","color":"#B83998"},
+  {"tag":"F#","color":"#b845fc"},
+  {"tag":"Julia","color":"#a270ba"},
+  {"tag":"Lua","color":"#000080"},
+  {"tag":"Nim","color":"#ffc200","text":"black"},
+  {"tag":"PHP","color":"#4F5D95"},
+  {"tag":"Perl/Raku","color":"#0298c3"},
+  {"tag":"R","color":"#198CE7"},
+  {"tag":"Reason Node.js","color":"#ff5847"},
+  {"tag":"Tcl","color":"#e4cc98","text":"black"},
+  {"tag":"APL","color":"#5A8164"},
+  {"tag":"LOLCODE","color":"#cc9900"},
+  {"tag":"BrainF***","color":"#2F2530"},
+  {"tag":"TypeScript","color":"#3178c6"},
+  {"tag":"CoffeeScript","color":"#244776"},
+  {"tag":"Emacs Lisp","color":"#c065db"},
+  {"tag":"Clojure","color":"#db5855"},
+  {"tag":"Scheme","color":"#1e4aec"},
+  {"tag":"QBasic","color":"darkblue"},
+  {"tag":"TI-BASIC","color":"black"},
+  {"tag":"Node.js","color":"lime"},
+  {"tag":"QUIL","color":"blue"},
+  {"tag":"Assembly","color":"#6E4C13"},
+  {"tag":"NASM","color":"#113B6A"},
+  {"tag":"GAS","color":"#073B4C"},
+  {"tag":"VB.NET","color":"#945db7"},
+  {"tag":"SQL","color":"#e38c00"},
+  {"tag":"Objective-C","color":"#438eff"},
+  {"tag":"Pascal","color":"#E3F171","text":"black"},
+  {"tag":"Haxe","color":"#df7900"},
+  {"tag":"Prolog","color":"#74283c"},
+  {"tag":"V","color":"#4f87c4"},
+  {"tag":"Zig","color":"#ec915c"},
+  {"tag":"Ada","color":"#02f88c"},
+  {"tag":"Arduino C++","color":"#00979C"}
+]
