@@ -18,7 +18,58 @@ fetch("/data/projects.json").then(n => n.json()).then(n => {
   document.title = `${title} | Austin Stitz`;
 
   document.getElementById("projectName").textContent = title;
-  document.getElementById("description").textContent = project.description;
+  
+  function processDesc(desc) {
+    let temp = ""
+    for(let i = 0; i < desc.length; i++) {
+      if(desc.slice(i).startsWith("~$")) {
+        i += 2;
+        if(desc.slice(i).startsWith("{{")) {
+          i += 2;
+          
+          for(; !desc.slice(i).startsWith("}}"); i++) {
+            temp += desc[i];
+          }
+          
+          i += 1;
+        } else if (desc.slice(i).startsWith("[")) {
+          i++;
+          
+          let content = "";
+          
+          for(; desc[i] != "]"; i++) {
+            content += desc[i];
+          }
+          
+          i+=2;
+          
+          let url = "";
+          
+          for(; desc[i] != ")"; i++) {
+            url += desc[i]
+          }
+          
+          const link = document.createElement("a");
+          link.textContent = content;
+          link.href = url;
+          temp += link.outerHTML;
+        }
+      } else if (desc[i] == "\n") {
+        temp += "<br/>";
+      } else if (desc[i] == "<") {
+        temp += "&lt;";
+      } else if (desc[i] == ">") {
+        temp += "&gt;";
+      } else {
+        temp += desc[i];
+      }
+    }
+    
+    return temp;
+  }
+  
+  
+  document.getElementById("description").innerHTML = processDesc(project.description);
 
   document.getElementById("thumb").src = project.thumbnail;
 
