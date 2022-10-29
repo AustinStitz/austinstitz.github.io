@@ -193,7 +193,7 @@ function refreshProjects() {
     else {
       const filtered = n.filter(item => {
 
-        if(["GitHub", "Scratch", "Repl.it", "Physical"].filter(n => tags.includes(n)).length > 0) {
+        if(["GitHub", "Scratch", "Repl.it", "Physical", "Unpublished"].filter(n => tags.includes(n)).length > 0) {
           let b = false;
 
           for(let site of item.websites) {
