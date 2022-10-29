@@ -56,9 +56,12 @@ fetch("/data/projects.json").then(n => n.json()).then(n => {
   document.getElementById("status").appendChild(createSpan(project.status));
   document.getElementById("websites").append(...project.websites.map(createSpan));
   document.getElementById("langs").append(...project.langs.map(createSpan));
+  document.getElementById("format").append(...project.types.map(createSpan));
+
+  if(project.langs.length <= 0) document.getElementById("langs").parentElement.style.display = "none";
 
 
-  const spans = ["status", "websites", "langs"].map(n => Array.from(document.getElementById(n).children)).reduce((a, b) => a.concat(b))
+  const spans = ["status", "websites", "langs", "format"].map(n => Array.from(document.getElementById(n).children)).reduce((a, b) => a.concat(b))
 
   fetch("/data/colors.json").then(n => n.json()).then(n => {
     for(const el of spans) {
