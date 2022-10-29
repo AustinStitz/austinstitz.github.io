@@ -220,7 +220,7 @@ html, body {
   width: 100%;
 }
 
-#status span, #websites span, #langs span {
+#status span, #websites span, #langs span, #format span {
   background-color: lime;
   color: white;
   padding: 5px 10px;
