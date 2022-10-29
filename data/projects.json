@@ -3,6 +3,7 @@
     "title": "ServerFire",
     "websites": ["GitHub"],
     "status": "Maintained",
+    "types": ["Software"],
     "langs": [
       "JavaScript",
       "Node.js"
@@ -26,6 +27,7 @@
     "title": "ServerFire Testing",
     "websites": ["GitHub", "Scratch", "Repl.it", "Physical"],
     "status": "In-Progress",
+    "types": ["Software"],
     "langs": [
       "JavaScript",
       "Python",
@@ -90,6 +92,27 @@
     "description": "ServerFire is a lightweight JavaScript server framework that is 100% modular and a seventh the size of the leading Node.js server library, Express!",
     "links": [],
     "images": ["/assets/node-logo.png", "/assets/lang-icon.png"],
+    "score": 10
+  },
+  {
+    "title": "Testing...",
+    "websites": ["GitHub"],
+    "status": "Maintained",
+    "types": ["Software", "Engineering", "Electronics", "Robotics", "Misc"],
+    "langs": [],
+    "thumbnail": "/assets/github-logo.png",
+    "description": "ServerFire is a lightweight JavaScript server framework that is 100% modular and a seventh the size of the leading Node.js server library, Express!",
+    "links": [
+      {
+        "label": "GitHub Repository: ",
+        "url": "https://github.com/AmazingMech2418/ServerFire"
+      },
+      {
+        "label": "NPM Package: ",
+        "url": "https://npmjs.com/package/serverfire"
+      }
+    ],
+    "images": [],
     "score": 10
   }
 ]
