@@ -227,6 +227,7 @@ html, body {
   margin: 5px;
   border-radius: 20px;
   display: inline-block;
+  cursor: pointer;
 }
 
 @keyframes fade {
