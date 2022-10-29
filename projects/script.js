@@ -26,7 +26,7 @@ const {populateLangs, updateLangs} = (() => {
         label.setAttribute("for", "lang" + i);
         label.textContent = lang;
         chk.addEventListener("click", () => {
-          window.history.replaceState(null, null, '?tags=' + Array.from(elements).map(n=>n[0]).concat(oldElements).filter(n => n.checked).map(n => n.value));
+          window.history.replaceState(null, null, '?tags=' + Array.from(elements).map(n=>n[0]).concat(oldElements).filter(n => n.checked).map(n => encodeURIComponent(n.value)));
           refreshProjects();
           updateLangs(isPartial);
         });
@@ -106,7 +106,7 @@ const {populateLangs, updateLangs} = (() => {
 
   Array.from(document.getElementsByTagName("input")).forEach(checkbox => {
     checkbox.addEventListener("click", () => {
-      window.history.replaceState(null, null, '?tags=' + Array.from(elements).map(n=>n[0]).concat(oldElements).filter(n => n.checked).map(n => n.value));
+      window.history.replaceState(null, null, '?tags=' + Array.from(elements).map(n=>n[0]).concat(oldElements).filter(n => n.checked).map(n => encodeURIComponent(n.value)));
       refreshProjects();
     });
   });
@@ -186,10 +186,16 @@ function refreshProjects() {
       document.getElementsByClassName("main")[0].append(...n.map(createTile));
     else {
       const filtered = n.filter(item => {
-        if(["GitHub", "Scratch", "Repl.it", "Physical"].filter(n => tags.includes(n)).length > 0)
+
+        if(["GitHub", "Scratch", "Repl.it", "Physical"].filter(n => tags.includes(n)).length > 0) {
+          let b = false;
+
           for(let site of item.websites) {
-            if(!tags.includes(site)) return false;
+            if(tags.includes(site)) b = true;
           }
+
+          if(!b) return false;
+        }
 
         if(["Maintained", "Abandoned", "In-Progress", "Completed"].filter(n => tags.includes(n)).length > 0)
           if(!tags.includes(item.status)) return false;
