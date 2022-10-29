@@ -129,12 +129,12 @@ html, body {
   overflow: hidden;
   margin: 10px;
   display: inline-block;
-  cursor: pointer;
 }
 
 .tile-content {
   width: 280px;
   height: 300px;
+  cursor: pointer;
 }
 
 .tile img {
