@@ -18,101 +18,17 @@
       {
         "label": "NPM Package: ",
         "url": "https://npmjs.com/package/serverfire"
-      }
-    ],
-    "images": [],
-    "score": 10
-  },
-  {
-    "title": "ServerFire Testing",
-    "websites": ["GitHub", "Scratch", "Repl.it", "Physical"],
-    "status": "In-Progress",
-    "types": ["Software"],
-    "langs": [
-      "JavaScript",
-      "Python",
-      "Haskell",
-      "Java",
-      "C++",
-      "C",
-      "Bash",
-      "Batchfile",
-      "Go",
-      "Fortran",
-      "Forth",
-      "Rust",
-      "Scala",
-      "Swift",
-      "Kotlin",
-      "Lisp",
-      "BASIC",
-      "Ruby/Crystal",
-      "C#",
-      "D",
-      "Dart",
-      "Elixir",
-      "Erlang",
-      "F#",
-      "Julia",
-      "Lua",
-      "Nim",
-      "PHP",
-      "Perl/Raku",
-      "R",
-      "Reason Node.js",
-      "Tcl",
-      "APL",
-      "LOLCODE",
-      "BrainF***",
-      "TypeScript",
-      "CoffeeScript",
-      "Emacs Lisp",
-      "Clojure",
-      "Scheme",
-      "QBasic",
-      "TI-BASIC",
-      "Node.js",
-      "QUIL",
-      "Assembly",
-      "NASM",
-      "GAS",
-      "VB.NET",
-      "SQL",
-      "Objective-C",
-      "Pascal",
-      "Haxe",
-      "Prolog",
-      "V",
-      "Zig",
-      "Ada",
-      "Arduino C++",
-      "Scratch (language)"
-    ],
-    "thumbnail": "/assets/github-logo.png",
-    "description": "ServerFire is a lightweight JavaScript server framework that is 100% modular and a seventh the size of the leading Node.js server library, Express!",
-    "links": [],
-    "images": ["/assets/node-logo.png", "/assets/lang-icon.png"],
-    "score": 10
-  },
-  {
-    "title": "Testing...",
-    "websites": ["GitHub"],
-    "status": "Maintained",
-    "types": ["Software", "Engineering", "Electronics", "Robotics", "Misc"],
-    "langs": [],
-    "thumbnail": "/assets/github-logo.png",
-    "description": "ServerFire is a lightweight JavaScript server framework that is 100% modular and a seventh the size of the leading Node.js server library, Express!",
-    "links": [
-      {
-        "label": "GitHub Repository: ",
-        "url": "https://github.com/AmazingMech2418/ServerFire"
       },
       {
-        "label": "NPM Package: ",
-        "url": "https://npmjs.com/package/serverfire"
+        "label": "Repl.it Demo",
+        "url": "https://replit.com/@AmazingMech2418/ServerFire"
+      },
+      {
+        "label": "Demo Website",
+        "url": "https://serverfire.amazingmech2418.repl.co/"
       }
     ],
     "images": [],
-    "score": 10
+    "score": 100
   }
 ]
