@@ -57,6 +57,35 @@
     ],
     "images": ["/assets/xss/xssdemo.png", "/assets/xss/xssrepo.png"],
     "score": 100
+  },
+  {
+    "title": "Space Observatory",
+    "websites": ["Unpublished"],
+    "status": "Abandoned",
+    "types": ["Software"],
+    "langs": [
+      "Python",
+      "JavaScript",
+      "Bash",
+      "HTML"
+    ],
+    "thumbnail": "/assets/observatory/nasa-logo.webp",
+    "description": "Between 8th and 9th grade, I wanted to be able to track all things NASA, and made this project! Some parts, such as RSS feeds and podcasts, still work, but some also use APIs that have become obsolete. The project is partially broken, but since I plan to make a more modular version eventually anyways, and have learned much more since making this about server-client communications, I will not continue to update this project and plan to create a new dashboard application that will do the same things as this!",
+    "links": [
+      {
+        "label": "GitHub Repository: ",
+        "url": "https://github.com/AustinMichael2418/Space-Observatory"
+      },
+      {
+        "label": "Repl.it Demo: ",
+        "url": "https://replit.com/@AustinStitz/Space-Observatory"
+      },
+      {
+        "label": "Demo Website: ",
+        "url": "https://space-observatory.austinstitz.repl.co/"
+      }
+    ],
+    "images": ["/assets/observatory/observatory-main.png", "/assets/observatory/spacex.png", "/assets/observatory/nasa-live.png", "/assets/observatory/nasa-podcast.png", , "/assets/observatory/nasa-rss.png"],
+    "score": 50
   }
-
 ]
