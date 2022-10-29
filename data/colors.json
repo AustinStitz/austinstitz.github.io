@@ -24,6 +24,10 @@
     "color": "blue"
   },
   {
+    "tag": "Unpublished",
+    "color": "gray"
+  },
+  {
     "tag": "Software",
     "color": "cyan"
   },
