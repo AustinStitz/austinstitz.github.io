@@ -20,6 +20,26 @@
     "color": "blue"
   },
   {
+    "tag": "Software",
+    "color": "cyan"
+  },
+  {
+    "tag": "Engineering",
+    "color": "blue"
+  },
+  {
+    "tag": "Electronics",
+    "color": "green"
+  },
+  {
+    "tag": "Robotics",
+    "color": "lime"
+  },
+  {
+    "tag": "Misc",
+    "color": "black"
+  },
+  {
     "tag": "Maintained",
     "color": "lime"
   },
