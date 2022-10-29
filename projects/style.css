@@ -191,6 +191,17 @@ html, body {
   z-index: 0;
   border-radius: 15px;
   overflow: hidden;
+  max-height: 250px;
+}
+
+.dropup-content:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: linear-gradient(transparent 200px, #ddd);
 }
 
 .dropup-content a {
