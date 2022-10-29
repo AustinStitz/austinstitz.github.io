@@ -166,10 +166,16 @@ function createTile(data) {
       items: [data.status]
     },
     {
-      icon: "/assets/lang-icon.png",
-      items: data.langs
+      icon: "/assets/category-icon.png",
+      items: data.types
     }
   ].map(createDropup));
+
+  if(data.langs.length > 0)
+    tags.append(createDropup({
+      icon: "/assets/lang-icon.png",
+      items: data.langs
+    }));
 
 
   outer.append(content, tags);
@@ -191,6 +197,16 @@ function refreshProjects() {
           let b = false;
 
           for(let site of item.websites) {
+            if(tags.includes(site)) b = true;
+          }
+
+          if(!b) return false;
+        }
+
+        if(["Software", "Engineering", "Electronics", "Robotics", "Misc"].filter(n => tags.includes(n)).length > 0) {
+          let b = false;
+
+          for(let site of item.types) {
             if(tags.includes(site)) b = true;
           }
 
