@@ -85,7 +85,7 @@
         "url": "https://space-observatory.austinstitz.repl.co/"
       }
     ],
-    "images": ["/assets/observatory/observatory-main.png", "/assets/observatory/spacex.png", "/assets/observatory/nasa-live.png", "/assets/observatory/nasa-podcast.png", , "/assets/observatory/nasa-rss.png"],
+    "images": ["/assets/observatory/observatory-main.png", "/assets/observatory/spacex.png", "/assets/observatory/nasa-live.png", "/assets/observatory/nasa-podcast.png", "/assets/observatory/nasa-rss.png"],
     "score": 50
   }
 ]
