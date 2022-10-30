@@ -87,5 +87,37 @@
     ],
     "images": ["/assets/observatory/observatory-main.png", "/assets/observatory/spacex.png", "/assets/observatory/nasa-live.png", "/assets/observatory/nasa-podcast.png", "/assets/observatory/nasa-rss.png"],
     "score": 50
+  },
+  {
+    "title": "QSH",
+    "websites": ["Unpublished"],
+    "status": "In-Progress",
+    "types": ["Software"],
+    "langs": [
+      "Java",
+      "QUIL"
+    ],
+    "thumbnail": "/assets/qsh/quantum.jpg",
+    "description": "When I was in 10th grade, I took AP Computer Science through North Carolina Virtual Public Schools, since my school didn't have any spots open in the class, and amidst the COVID-19 pandemic, our school prevented schedule changes unless for graduation requirements. One discussion post assignment then introduced me to quantum computing, and I ended up going down a rabbit-hole, learning more about quantum computing and the QUantum Instruction Language (QUIL). And when it came to be time to complete my final project for that class, I thought about the difficulties I faced in trying to learn quantum computing, with such limited resources available, and realized what we were missing: a REPL shell for QUIL.\n\nSo, I made it! I wrote my own QUIL interpreter, quantum simulation engine, and terminal UI, and created a program that could simulate quantum circuits using the QUIL language, without requiring a quantum computer! While the ~$[IBM Quantum Experience](https://quantum-computing.ibm.com/) existed, I noticed it used the wrong reset function, simply setting the qbit to 0 rather than swapping it out for a new one. And the drag-and-drop user interface didn't explain anything about circuits or gates, and did not teach the QUIL language at all. So, the lack of an accurate quantum simulator and UI inspired me to create QSH!\n\nQSH is still in-progress, despite me not having worked on it in about two years now. Once I have more time, with school out and college applications done, I hope to continue it and add features like parametric circuits, and maybe even expand it to a full computational shell, including paradigms including probabilistic and DNA computing! Both using and making QSH have helped me learn more about quantum computing as a field, and I hope, once I finish it, that it can help others in similar ways!",
+    "links": [
+      {
+        "label": "GitHub Repository: ",
+        "url": "https://github.com/AustinMichael2418/QSH"
+      },
+      {
+        "label": "Repl.it Demo: ",
+        "url": "https://replit.com/@AustinStitz/QSH"
+      },
+      {
+        "label": "QUIL Specifications: ",
+        "url": "https://github.com/quil-lang/quil/blob/master/spec/Quil.md"
+      },
+      {
+        "label": "Original Quantum Instruction Set Specifications: ",
+        "url": "https://arxiv.org/pdf/1608.03355.pdf"
+      }
+    ],
+    "images": ["/assets/qsh/qsh1.png", "/assets/qsh/qsh2.png", "/assets/qsh/qsh3.png", "/assets/qsh/qsh4.png"],
+    "score": 99
   }
 ]
