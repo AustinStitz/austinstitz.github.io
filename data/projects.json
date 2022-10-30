@@ -153,5 +153,24 @@
     ],
     "images": ["/assets/cloud/sc-npm.png", "/assets/cloud/sc-repo.png"],
     "score": 98
+  },
+  {
+    "title": "Wordle.AI",
+    "websites": ["Repl.it"],
+    "status": "Completed",
+    "types": ["Software"],
+    "langs": [
+      "Haskell"
+    ],
+    "thumbnail": "/assets/repl-logo.png",
+    "description": "Who doesn't like ~$[Wordle](https://www.nytimes.com/games/wordle/index.html)?\n\nYet, despite how fun the beloved word game is, sometimes, finding the word can be challenging! And when you are so intent on keeping your win streak, you ~${{<i>need</i>}} to win! So, I created a Wordle solver: Wordle.AI! The program looks at a list of words in the English language and, using letter frequencies, finds the best starting word, and based on the results from typing that word into the game, the best guess for each round until you get the answer!\n\nWriting this in Haskell was relatively challenging since it was my first major program in the beloved functional programming language. But I was able to figure it out! The hardest part was the file I/O to read the wordlist, but the Haskell documentation is amazing, and I found everything I needed!\n\nOverall, this was a fun project to make, although pretty difficult! It taught me a lot about Haskell and allowed me to maintain my Wordle streak during very difficult words! (Don't worry, I did not use the AI most of the time, just when I was desperately confused!)",
+    "links": [
+      {
+        "label": "Repl.it Project: ",
+        "url": "https://replit.com/@AmazingMech2418/WordleAI"
+      }
+    ],
+    "images": ["/assets/wordleai/wordleai.png", "/assets/cloud/wordle.png"],
+    "score": 99
   }
 ]
