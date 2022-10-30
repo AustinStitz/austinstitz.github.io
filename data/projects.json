@@ -119,5 +119,39 @@
     ],
     "images": ["/assets/qsh/qsh1.png", "/assets/qsh/qsh2.png", "/assets/qsh/qsh3.png", "/assets/qsh/qsh4.png"],
     "score": 99
+  },
+  {
+    "title": "ScratchCloud",
+    "websites": ["GitHub", "Scratch"],
+    "status": "Maintained",
+    "types": ["Software"],
+    "langs": [
+      "JavaScript",
+      "Node.js",
+      "Scratch (language)",
+      "SQL"
+    ],
+    "thumbnail": "/assets/scratch-logo.jpg",
+    "description": "On Scratch, the famous block coding website, there is a feature that very few people know much about how to use: cloud variables. People know it's for sharing information between users through a project, or possibly between a user and external server acting as a user, but actually implementing it is difficult. It is especially difficult when you want to control one end programmatically, outside of Scratch. I made ScratchCloud to make that easier.\n\nWith security features being added to the website, authentication through older libraries fails, making this one of the only libraries for cloud manipulation that actually works! This specific implementation is built for Node.js and includes both synchronous and asynchronous APIs to interface with the websockets cloud variables run on. Although still prone to the regular glitches of cloud data, ScratchCloud allows you to connect Scratch projects to the outside world!\n\nAs an example of ScratchCloud, I have also included in this project page, my CloudSocket RSA-protected authentication system from my participation in OS Wars, a competition for operating system simulators in Scratch.",
+    "links": [
+      {
+        "label": "GitHub Repository: ",
+        "url": "https://github.com/AmazingMech2418/ScratchCloud"
+      },
+      {
+        "label": "NPM Package: ",
+        "url": "https://www.npmjs.com/package/scratchcloud"
+      },
+      {
+        "label": "CloudSocket Scratch Project: ",
+        "url": "https://scratch.mit.edu/projects/470009600/"
+      },
+      {
+        "label": "CloudSocket Backend on Repl.it: ",
+        "url": "https://replit.com/@AmazingMech2418/CloudSocket-RedOS-Login"
+      }
+    ],
+    "images": ["/assets/cloud/sc-npm.png", "/assets/cloud/sc-repo.png"],
+    "score": 98
   }
 ]
