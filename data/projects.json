@@ -325,5 +325,24 @@
     ],
     "images": [],
     "score": 80
+  },
+  {
+    "title": "PrimeExt",
+    "websites": ["GitHub", "Scratch"],
+    "status": "Completed",
+    "types": ["Software"],
+    "langs": [
+      "JavaScript", "Scratch (language)"
+    ],
+    "thumbnail": "/assets/scratchx-logo.png",
+    "description": "PrimeExt was an intermediary project for the development of ~$[S3Extend](https://austinstitz.github.io/projects/view/#S3Extend). It started out as a Scratch extension for Scratch 2.0, designed to aid in the fast calculation of the primality of numbers, but then developed into a demonstration for Scratch extensions in Scratch 3.0. I used this to learn more about the Scratch 3.0 extension format, as well as apply my React component extractor that is then able to register the extension. I also learned of the bug where only extensions with the ID \"math\" will save, which is why this extension does not allow you to save the project.\n\nThis project is complete as of now and can be properly integrated into S3Extend for demonstrations. However, it is mostly still up as a relic of the past of the new wrapper for extensions in Scratch 3.0.",
+    "links": [
+      {
+        "label": "GitHub Repository: ",
+        "url": "https://github.com/AmazingMech2418/PrimeExt"
+      }
+    ],
+    "images": ["/assets/primeext/primeext.PNG"],
+    "score": 60
   }
 ]
