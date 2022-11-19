@@ -264,5 +264,24 @@
     ],
     "images": ["/assets/pdf2project/pdf2project1.PNG", "/assets/pdf2project/pdf2project2.PNG", "/assets/pdf2project/pdf2project3.PNG", "/assets/pdf2project/pdf2project4.PNG"],
     "score": 88
+  },
+  {
+    "title": "S3Extend",
+    "websites": ["GitHub", "Scratch"],
+    "status": "Maintained",
+    "types": ["Software"],
+    "langs": [
+      "JavaScript", "Scratch (language)"
+    ],
+    "thumbnail": "/assets/scratchx-logo.png",
+    "description": "Scratch extensions are scripts that you can use to add blocks to the ~$[Scratch](https://scratch.mit.edu/) editor. Some are already available, such as Pen, Music, or Text to Speech, but others are called “experimental extensions,” and are made by users on the website who create scripts that can add the blocks. During Scratch 2.0, making experimental extensions was extremely common, and even promoted by ~$[ScratchX](https://scratchx.org/)! There was a block on sharing projects with these, but it was easy to get around, and people still shared projects with experimental extensions regardless. But, when Scratch updated to 3.0, in order to outlive Flash Player, the ~$[VM](https://github.com/LLK/scratch-vm) became encapsulated inside a React component, making it inaccessible to normal JavaScript scripts. And since registering extensions was done inside the VM, experimental Scratch extensions could not be loaded.\n\nThen, I found ~$[a project](https://scratch.mit.edu/projects/717031217/) that used an experimental extension, just it would only work in ~$[TurboWarp](https://turbowarp.org/). I had already experimented with exposing the VM through React DevTools, but just needed to find how to do it programmatically. After some research, I found out how to expose a React fiber to then traverse to find the component itself and created a script to do that. Using that script, I then used React DevTools to find the target element to find the component for, and ran the function on that element to get the component, which would expose the properties, which would expose the VM. Using this, I then globalized the VM and modified the extension registering script to get it to work, and I tested it, and it worked!\n\nBut when I tried making my own extension, I saw an error while trying to load it. It turned out experimental extensions needed to have a recognized ID, that was either one of a pre-existing extension or block category. Looking through the Scratch source code, I found that an unused block type was used to help with the transition from Scratch 2.0 to Scratch 3.0: math. And that just happened to be the extension ID of the extension in the project I had found! So, any extension had to have an ID of \"math.\"\n\nBut that meant that only one extension could be loaded at a time. So, I decided to create a wrapper for multiple extensions in a single project: S3Extend. Applying the VM-globalizing script and the basic extension format, as well as defining a few additional wrapper functions for registering extensions, I made S3Extend, using buttons to separate and label different extensions. However, this is still in-progress, and I did notice a bug where loading a second extension causes S3Extend to show in the block menu twice, but one time with the first extension and the second time with both. I still have to figure out what causes this bug and how to fix it, but the script otherwise works, and I have tested it with old extensions I created back when the documentation was first released.",
+    "links": [
+      {
+        "label": "GitHub Repository: ",
+        "url": "https://github.com/AmazingMech2418/S3Extend"
+      }
+    ],
+    "images": ["/assets/s3extend/s3extend.PNG"],
+    "score": 80
   }
 ]
