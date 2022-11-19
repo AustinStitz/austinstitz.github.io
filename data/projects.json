@@ -218,5 +218,28 @@
     ],
     "images": [],
     "score": 87
+  },
+  {
+    "title": "NCVPS PTC Tech Support AI",
+    "websites": ["GitHub"],
+    "status": "Maintained",
+    "types": ["Software"],
+    "langs": [
+      "HTML", "JavaScript"
+    ],
+    "thumbnail": "/assets/ncvpsptc/ptc-logo.jpg",
+    "description": "I have worked with the North Carolina Virtual Public Schools Peer Tutoring Center since 8th grade, including as a part of the Tech Support team. In Tech Support, I have created multiple tutorial videos with information on how to fix bugs in the tools used by NCVPS, such as Canvas and Upswing (for peer tutoring), as well as general bugs such as in Google Chrome.\n\nTo better allow students to find these videos, I created the \"Tech Support AI!\" It isn’t really an AI, but since virtual assistants are sometimes called \"AIs\" falsely, I originally called it one when I started the project three years ago. It’s really more of a search engine, which allows the user to search through videos, using their transcripts and titles to find keywords in the search. It also supports voice search, using Google Chrome's speech-to-text API.\n\nThe greatest challenge making this was connecting the website to a Google Sheets spreadsheet to get the data needed to display the videos, since everything was connected to a spreadsheet that was auto-populated by a Google Form. I ultimately found that I could use a Repl.it API endpoint that uses wget to obtain the CSV data to then return to the website for processing. Everything else was much more straight-forward, including designing the search algorithm and implementing the voice search, which was made easier by a previous project of mine: ~$[SpeakJS](https://github.com/AmazingMech2418/SpeakJS).",
+    "links": [
+      {
+        "label": "GitHub Repository: ",
+        "url": "https://github.com/ncvpsptc/ai"
+      },
+      {
+        "label": "Live Website: ",
+        "url": "https://ncvpsptc.github.io/ai/"
+      }
+    ],
+    "images": ["/assets/ncvpsptc/ai-homepage.PNG", "/assets/ncvpsptc/tech-support-page.PNG"],
+    "score": 70
   }
 ]
