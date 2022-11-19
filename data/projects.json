@@ -195,5 +195,27 @@
     ],
     "images": [],
     "score": 87
+  },
+  {
+    "title": "BrainFC",
+    "websites": ["Repl.it", "GitHub"],
+    "status": "Maintained",
+    "types": ["Software"],
+    "langs": [
+      "C", "BrainF***"
+    ],
+    "thumbnail": "/assets/github-logo.png",
+    "description": "BrainF (abbreviated due to profanity in the name) is one of the hardest programming languages to program in. It has just 8 commands: \".\", \",\", \"<\", \">\", \"[\", \"]\", \"+\", and \"-\". Every other character in the program is simply ignored. Yet, the challenge of programming in it makes it more fun! That’s why I started to learn it and program in it.\n\nBut, ~$[Repl.it](https://replit.com)'s default BrainF interpreter didn’t work for multi-character inputs, so I made a new interpreter in C! Using arrays and pointers, and even a dynamic pointer array for a call stack and file reading, I fixed the issue with Repl.it’s interpreter by simply making my own.\n\nThe code is relatively simple, everything fitting in a single 109-line file, but the greatest challenges were finding out how to avoid segmentation faults while working with pointer arrays and figuring out how to read a file in C. I had only used basic user input in my C programs before, so this was my first time using file I/O in a C program. \n\nI also used the concepts of BrainFC to make a ~$[BrainF compiler in Java](https://replit.com/@AmazingMech2418/BrainF-Compiler), but the demo on Repl.it unfortunately doesn’t seem to be working currently, perhaps due to the ~$[update to Nix](https://blog.replit.com/nix). Both of these only work for Linux currently, since that is what Repl.it runs on, due to the need to change terminal settings to allow multi-character inputs.",
+    "links": [
+      {
+        "label": "GitHub Repository: ",
+        "url": "https://github.com/AmazingMech2418/BrainFC"
+      },
+      {
+        "label": "Repl.it Demo: ",
+        "url": "https://replit.com/@AmazingMech2418/BrainF-in-C"
+    ],
+    "images": [],
+    "score": 87
   }
 ]
