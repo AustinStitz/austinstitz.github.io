@@ -172,5 +172,27 @@
     ],
     "images": ["/assets/wordleai/wordleai.png", "/assets/wordleai/wordle.png"],
     "score": 99
+  },
+  {
+    "title": "Pi in Many Languages",
+    "websites": ["Repl.it", "GitHub"],
+    "status": "Completed",
+    "types": ["Software"],
+    "langs": [
+      "Haskell"
+    ],
+    "thumbnail": "/assets/repl-logo.png",
+    "description": "When the COVID-19 pandemic hit during the spring and summer of 2020, and literally everything closed down, I decided to use the time to explore new programming languages I had never programmed in. This project began with ~$[@LizFoster](https://replit.com/@LizFoster), an online friend on Repl.it, making her many pi approximations and sharing them on the website. I had already made my ~$[C approximations](https://replit.com/talk/share/p-Approximations-in-C/33461) during a competition with ~$[@StudentFires](https://replit.com/@StudentFires), but then decided to make ~$[two more programs](https://replit.com/talk/share/2-Approximations-of-p-In-Only-Four-Lines-of-Code/32773), each with two approximations, in Python and Node.js, each code-golfed.\n\nI was then dared by ~$[@Warhawk947](https://replit.com/@Warhawk947) to write an approximation in ~$[LOLCODE](https://replit.com/talk/share/p-in-LOLCODE/34421), an esoteric programming language based entirely on a meme! And from there, I just continued, making pi approximations in as many languages as I could on Repl.it! Although a few of the earlier approximations also use the arctangent infinite series to find arctan(1) = pi/4 and then multiply by 4 to get pi, most of these use the Nilakantha Series to find pi.\n\nThe hardest part of this project was finding documentation. Once I found it, making the programs was relatively straight-forward, but lesser-used languages, such as APL, didn’t have as much available. But taking on this challenge, I got a taste of 46 different programming languages and dialects, which allowed me to better choose which ones I wanted to focus on. If it weren’t for this project, I would have never found Haskell, which is one of my favorite programming languages now, and I wouldn’t have been exposed to older languages like Fortran and COBOL which are also quite fun to program in!",
+    "links": [
+      {
+        "label": "Latest Repl.it Post: ",
+        "url": "https://replit.com/talk/share/p-in-COBOL/140260"
+      },
+      {
+        "label": "GitHub Repository: ",
+        "url": "https://github.com/AmazingMech2418/Pi-in-Many-Languages"
+      }
+    ],
+    "score": 87
   }
 ]
