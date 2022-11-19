@@ -306,5 +306,24 @@
     ],
     "images": ["/assets/sfth/sfth-repo.PNG", "/assets/sfth/sfth-project.PNG"],
     "score": 80
+  },
+  {
+    "title": "Lambda Factorial",
+    "websites": ["GitHub"],
+    "status": "Completed",
+    "types": ["Software"],
+    "langs": [
+      "JavaScript", "Haskell", "Python"
+    ],
+    "thumbnail": "/assets/lambda/lambda.png",
+    "description": "As I was researching the history of computing I came across one of the first computing paradigms ever created: Lambda Calculus. Created by Alonzo Church, who was also Alan Turing's teacher and mentor, Lambda Calculus lays out the foundations of modern functional programming. With nothing but functions, parameters, and applications--and functions only being able to take one parameter--, it is difficult to program in, but has been proven to be Turing-complete, thanks to recursion and various fixed-point combinators. The behavior of fixed-point combinators depends on the interpreter (as I found out with ~$[my failed interpreter on Scratch](https://scratch.mit.edu/projects/735059540/)), usually either the y-combinator or z-combinator will work.\n\nTo practice Lambda Calculus, I decided to make a basic program in three different programming languages using nothing but lambdas. Since JavaScript, Haskell, and Python all have this functionality, I used those languages. Using z-combinators and Church notation, I created a factorial function! It was difficult to figure out how everything worked at first, but I was able to figure it out, and learning more about this computational system was overall very rewarding!",
+    "links": [
+      {
+        "label": "GitHub Repository: ",
+        "url": "https://github.com/AmazingMech2418/Lambda-Factorial/"
+      }
+    ],
+    "images": [],
+    "score": 80
   }
 ]
