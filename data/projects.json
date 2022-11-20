@@ -542,5 +542,24 @@
     ],
     "images": ["/assets/jet/jet1.PNG", "/assets/jet/jet2.PNG", "/assets/jet/jet3.PNG", "/assets/jet/jet4.PNG", "/assets/jet/jet5.PNG", "/assets/jet/jet6.PNG"],
     "score": 68
+  },
+  {
+    "title": "Java JSON",
+    "websites": ["GitHub"],
+    "status": "Completed",
+    "types": ["Software"],
+    "langs": [
+      "Java"
+    ],
+    "thumbnail": "/assets/java-logo.jpg",
+    "description": "When I needed to parse JSON data in Java for my AP Computer Science class, I could have just looked for a library somewhere and loaded it into my IDE, but instead, I decided to make my own. And this is that JSON parser! Using ArrayLists and HashMaps to store the raw data and classes to act as wrappers, this allows advanced manipulation of JSON datasets in Java. It is slower than some other JSON parsers due to its recursive algorithm, but it still works and can parse large datasets relatively quickly!",
+    "links": [
+      {
+        "label": "GitHub Repository: ",
+        "url": "https://github.com/AmazingMech2418/Java-JSON"
+      }
+    ],
+    "images": [],
+    "score": 75
   }
 ]
