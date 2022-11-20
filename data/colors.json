@@ -64,6 +64,10 @@
     "tag": "In-Progress",
     "color": "gray"
   },
+  {
+    "tag": "Contributed",
+    "color": "blue"
+  },
   {"tag":"JavaScript","color":"#f1e05a","text":"black"},
   {"tag":"Python","color":"#3572A5"},
   {"tag":"Haskell","color":"#5e5086"},
