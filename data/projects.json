@@ -523,5 +523,24 @@
     ],
     "images": [],
     "score": 65
+  },
+  {
+    "title": "Jet!",
+    "websites": ["GitHub"],
+    "status": "Completed",
+    "types": ["Software"],
+    "langs": [
+      "C#"
+    ],
+    "thumbnail": "/assets/unity-logo.png",
+    "description": "Jet! was my first ever 3D Unity game! Although it relies heavily on prefabs, I was able to figure out how to shape the terrain, control the movement of the camera to align with the airplane, create a bounding box for the planes, and create a scoring system based on doing tricks. It is relatively glitchy and the textures didn't all upload properly when publishing to GitHub, but it taught me a lot about 3D game design and the Unity interface!",
+    "links": [
+      {
+        "label": "GitHub Repository (distribution, not source code): ",
+        "url": "https://github.com/AmazingMech2418/Jet"
+      }
+    ],
+    "images": ["/assets/jet/jet1.PNG", "/assets/jet/jet2.PNG", "/assets/jet/jet3.PNG", "/assets/jet/jet4.PNG", "/assets/jet/jet5.PNG", "/assets/jet/jet6.PNG"],
+    "score": 68
   }
 ]
