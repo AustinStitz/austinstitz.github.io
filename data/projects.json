@@ -607,5 +607,36 @@
     ],
     "images": ["/assets/serverlight.PNG"],
     "score": 45
+  },
+  {
+    "title": "Express-Fileupload (Contributed)",
+    "websites": ["GitHub"],
+    "status": "Contributed",
+    "types": ["Software"],
+    "langs": [
+      "JavaScript", "Node.js"
+    ],
+    "thumbnail": "/assets/npm-logo.png",
+    "description": "One day, I found an article about an interesting JavaScript vulnerability found in the ~$[express-fileupload](https://github.com/richardgirges/express-fileupload) package that is rarely seen: prototype pollution. Working by modifying the prototypes of data types in JavaScript, prototype pollution is a very serious vulnerability, although seldom seen. GitHub user ~$[@po6ix](https://github.com/po6ix) had submitted ~$[an issue](https://github.com/richardgirges/express-fileupload/issues/236) about the vulnerability in the package. And it was fixed, but I saw a still-persistent method pollution vulnerability. While prototype pollution changes the entire data type, method pollution can still be used to modify a specific object, such as changing the Array.join method, causing a potential denial of service attack. So, I submitted an issue and pull request and was able to help fix it! ~$[Richard Girges](https://github.com/richardgirges) is the primary developer of the package and has done amazing work on it! I just helped recognize and fix this one bug.",
+    "links": [
+      {
+        "label": "GitHub Repository: ",
+        "url": "https://github.com/richardgirges/express-fileupload"
+      },
+      {
+        "label": "NPM Package: ",
+        "url": "https://www.npmjs.com/package/express-fileupload"
+      },
+      {
+        "label": "Issue: ",
+        "url": "https://github.com/richardgirges/express-fileupload/issues/239"
+      },
+      {
+        "label": "Pull Request: ",
+        "url": "https://github.com/richardgirges/express-fileupload/pull/240"
+      }
+    ],
+    "images": ["/assets/express-fileupload/express-fileupload1.PNG", "/assets/express-fileupload/express-fileupload2.PNG", "/assets/express-fileupload/express-fileupload3.PNG", "/assets/express-fileupload/express-fileupload4.PNG"],
+    "score": 25
   }
 ]
