@@ -213,7 +213,7 @@ function refreshProjects() {
           if(!b) return false;
         }
 
-        if(["Maintained", "Abandoned", "In-Progress", "Completed"].filter(n => tags.includes(n)).length > 0)
+        if(["Maintained", "Abandoned", "In-Progress", "Completed", "Contributed"].filter(n => tags.includes(n)).length > 0)
           if(!tags.includes(item.status)) return false;
 
         let langs = 1;
