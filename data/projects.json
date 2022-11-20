@@ -353,7 +353,7 @@
     "langs": [
       "JavaScript", "Node.js"
     ],
-    "thumbnail": "/assets/scratchx-logo.png",
+    "thumbnail": "/assets/repl-logo.png",
     "description": "",
     "links": [
       {
@@ -361,7 +361,7 @@
         "url": "https://replit.com/@AmazingMech2418/Elections-Console"
       }
     ],
-    "images": ["/assets/primeext/primeext.PNG"],
+    "images": ["/assets/repl/elections1.PNG", "/assets/repl/elections2.PNG"],
     "score": 19
   },
   {
@@ -372,7 +372,7 @@
     "langs": [
       "C"
     ],
-    "thumbnail": "/assets/scratchx-logo.png",
+    "thumbnail": "/assets/repl-logo.png",
     "description": "",
     "links": [
       {
@@ -380,7 +380,7 @@
         "url": "https://replit.com/@AmazingMech2418/LMC"
       }
     ],
-    "images": ["/assets/primeext/primeext.PNG"],
+    "images": ["/assets/repl/lmc-prog.PNG", "/assets/repl/lmc-display.PNG"],
     "score": 40
   },
   {
@@ -391,7 +391,7 @@
     "langs": [
       "BASIC"
     ],
-    "thumbnail": "/assets/scratchx-logo.png",
+    "thumbnail": "/assets/repl/conway.PNG",
     "description": "",
     "links": [
       {
@@ -399,7 +399,7 @@
         "url": "https://replit.com/@AmazingMech2418/Conways-Game-of-Life"
       }
     ],
-    "images": ["/assets/primeext/primeext.PNG"],
+    "images": [],
     "score": 70
   },
   {
@@ -410,7 +410,7 @@
     "langs": [
       "BASIC"
     ],
-    "thumbnail": "/assets/scratchx-logo.png",
+    "thumbnail": "/assets/repl/pong.PNG",
     "description": "",
     "links": [
       {
@@ -418,7 +418,7 @@
         "url": "https://replit.com/@AmazingMech2418/Pong"
       }
     ],
-    "images": ["/assets/primeext/primeext.PNG"],
+    "images": [],
     "score": 40
   },
   {
@@ -429,7 +429,7 @@
     "langs": [
       "BASIC"
     ],
-    "thumbnail": "/assets/scratchx-logo.png",
+    "thumbnail": "/assets/repl-logo.png",
     "description": "",
     "links": [
       {
@@ -437,7 +437,7 @@
         "url": "https://replit.com/@AmazingMech2418/Snake"
       }
     ],
-    "images": ["/assets/primeext/primeext.PNG"],
+    "images": ["/assets/repl/snake.PNG"],
     "score": 40
   },
   {
@@ -446,9 +446,9 @@
     "status": "Completed",
     "types": ["Software"],
     "langs": [
-      "BASIC"
+      "Go"
     ],
-    "thumbnail": "/assets/scratchx-logo.png",
+    "thumbnail": "/assets/repl-logo.png",
     "description": "",
     "links": [
       {
@@ -456,7 +456,7 @@
         "url": "https://replit.com/@AmazingMech2418/Representative-Apportionment"
       }
     ],
-    "images": ["/assets/primeext/primeext.PNG"],
+    "images": ["/assets/repl/apportionment.PNG"],
     "score": 65
   }
 ]
