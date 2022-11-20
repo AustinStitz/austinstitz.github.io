@@ -354,7 +354,7 @@
       "JavaScript", "Node.js"
     ],
     "thumbnail": "/assets/repl-logo.png",
-    "description": "",
+    "description": "During the 2020 election, I noticed that President Biden's victory was announced before many key states were completely decided. Using CNN's election results map, I calculated the probability of swings from the current trajectories and realized that many of the states that were \"decided\" according to the map had above 0% chance of a swing, which frustrated me. So, to obtain more accurate results about when the election was completely decided, I created a Node.js program to calculate the probability of victory for either side.\n\nCalculating the chance of a swing for each state based on the existing percentages and the percent of polls reporting, I determined which states had officially decided results and which just had a lean one way or the other, and for those with a lean, I used the probabilities of a flip to the other candidate to calculate an average results chance. Using the available electoral votes for undecided states, I also showed the best-case scenarios for either party/candidate. Ultimately, the election wasn't actually decided until a week after it was originally called, and even states like Georgia, Wisconsin, and Arizona had the potential to switch candidates at 99% of the polls reporting with how close the presidential races in those states were.",
     "links": [
       {
         "label": "Repl.it Project: ",
@@ -373,7 +373,7 @@
       "C"
     ],
     "thumbnail": "/assets/repl-logo.png",
-    "description": "",
+    "description": "The Little Man Computer, or LMC, is a simple von Neumann architecture computer simulator used to teach the low-level functionalities of computers. With an analogy of a person in a mail room, there are 100 data addresses, or mailboxes, numbered 0 to 99, each with three-digit data from 000 to 999. Using these as memory locations, the LMC reads the relevant instructions and pulls the relevant stored data to complete computations.\n\nTo learn more about this, I decided to make a LMC simulator in C! As an example program, I also used the Fibbonacci sequence!",
     "links": [
       {
         "label": "Repl.it Project: ",
@@ -392,7 +392,7 @@
       "BASIC"
     ],
     "thumbnail": "/assets/repl/conway.PNG",
-    "description": "",
+    "description": "Shortly after the tragic passing of English mathemetician John Horton Conway, in 2020, I wanted to learn more about his famous cellular automation: Conways' Game of Life. In the Game of Life, any cell with 2 or 3 neighbors will keep its current state and any cell with 3 neighbors will turn on or \"come alive\". Using BASIC, I created a simulation of this, with the ability to pause and manipulate the cells by toggling them on and off. \n\nInvented in 1970, the Game of Life is the most well-known cellular automation and has even been found to be Turing-complete! Many mathematicians have even spent their entire lives studying its behavior, and the creation of different objects such as still lifes, gliders, and spaceships.",
     "links": [
       {
         "label": "Repl.it Project: ",
@@ -411,7 +411,7 @@
       "BASIC"
     ],
     "thumbnail": "/assets/repl/pong.PNG",
-    "description": "",
+    "description": "This is a recreation of the classic game, Pong! Made in BASIC, you can use the w and s keys to move the paddle. I attempted to most accurately recreate the game, although there might be some minor inconsistencies.",
     "links": [
       {
         "label": "Repl.it Project: ",
@@ -430,7 +430,7 @@
       "BASIC"
     ],
     "thumbnail": "/assets/repl-logo.png",
-    "description": "",
+    "description": "This is a recreation of the classic game, Snake! Made in BASIC, you can use WASD to move the snake. I attempted to most accurately recreate the game, although there might be some minor inconsistencies.",
     "links": [
       {
         "label": "Repl.it Project: ",
@@ -449,7 +449,7 @@
       "Go"
     ],
     "thumbnail": "/assets/repl-logo.png",
-    "description": "",
+    "description": "As I grew curious about how the votes in the electoral college and number of representatives in the House of Representatives were determined, I decided to create a program in Go to demonstrate the algorithm! Using population data from the US Census Bureau and the official algorithms for representative apportionment, this program will accurately display the number of representatives if they were apportioned in a particular year. Only 2019, 2016, and 2000 are available in this script, but any others can also be used with a proper API endpoint for the population data.",
     "links": [
       {
         "label": "Repl.it Project: ",
