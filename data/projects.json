@@ -584,5 +584,28 @@
     ],
     "images": [],
     "score": 75
+  },
+  {
+    "title": "ServerLight",
+    "websites": ["GitHub"],
+    "status": "Completed",
+    "types": ["Software"],
+    "langs": [
+      "JavaScript", "Node.js"
+    ],
+    "thumbnail": "/assets/npm-logo.png",
+    "description": "When I began my journey to make a better Node.js server library, which ended in ~$[ServerFire](https://austinstitz.github.io/projects/view/#ServerFire), I started with another library: ServerLight. This was only intended to be a base for basic web servers I needed to create. I simply uploaded it to NPM to make it easier to transport between projects and to learn more about publishing NPM packages in general. It was my first package and, although severely limited, it cut the size of ~$[Express](https://www.npmjs.com/package/express) into nearly 1/50 its original size while keeping much of the same capabilities with the proper add-ons. It was intended to be a lightweight server library, and being only 4.53 kB, it certainly succeeded at this goal!",
+    "links": [
+      {
+        "label": "GitHub Repository: ",
+        "url": "https://github.com/AmazingMech2418/ServerLight"
+      },
+      {
+        "label": "NPM Package: ",
+        "url": "https://www.npmjs.com/package/serverlight"
+      }
+    ],
+    "images": ["/assets/serverlight.PNG"],
+    "score": 45
   }
 ]
