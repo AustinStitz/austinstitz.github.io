@@ -458,5 +458,51 @@
     ],
     "images": ["/assets/repl/apportionment.PNG"],
     "score": 65
+  },
+  {
+    "title": "BookmarkletMaker",
+    "websites": ["GitHub"],
+    "status": "Completed",
+    "types": ["Software"],
+    "langs": [
+      "JavaScript", "HTML"
+    ],
+    "thumbnail": "/assets/js-logo.png",
+    "description": "On the Chromebooks we use for school, you can't do much. You can't even open the Chrome DevTools, because they are blocked. But you can use bookmarklets. As I learned more about the javascript: protocol and how it can be used to run JavaScript code, I created a website to allow you to create bookmarklets from basic JS scripts! This is that website. It has a few glitches, including broken links and that you cannot use double-quotes, but these are fixed in a later version I have yet to publish, which actually exists currently just as a bookmarklet. The new version also uses textarea elements instead of content-editable <p> tags, among other improvements!",
+    "links": [
+      {
+        "label": "GitHub Repository: ",
+        "url": "https://github.com/AmazingMech2418/BookmarkletMaker"
+      },
+      {
+        "label": "Live Website: ",
+        "url": "https://amazingmech2418.github.io/BookmarkletMaker/home/"
+      }
+    ],
+    "images": ["/assets/bookmarkletmaker.PNG"],
+    "score": 68
+  },
+  {
+    "title": "SpikeJump",
+    "websites": ["GitHub"],
+    "status": "Completed",
+    "types": ["Software"],
+    "langs": [
+      "JavaScript", "HTML"
+    ],
+    "thumbnail": "/assets/spikejump/spikejump1.PNG",
+    "description": "In 7th grade, two of my friends and I tried to start our own game development company, called Pomegranate Gaming. And as our first game, we were going to make a basic HTML5 game similar to the Google Chrome \"dinosaur game\". I unfortunately ended up being the only one to contribute to it at all, but I made SpikeJump, which was also my first ever HTML5 video game! I learned a lot from making it, although it maybe isn't the best quality.",
+    "links": [
+      {
+        "label": "GitHub Repository: ",
+        "url": "https://github.com/PomegranateGaming/SpikeJump"
+      },
+      {
+        "label": "Live Website: ",
+        "url": "https://pomegranategaming.github.io/SpikeJump/"
+      }
+    ],
+    "images": ["/assets/spikejump/spikejump1.PNG", "/assets/spikejump/spikejump2.PNG"],
+    "score": 72
   }
 ]
