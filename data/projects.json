@@ -344,5 +344,119 @@
     ],
     "images": ["/assets/primeext/primeext.PNG"],
     "score": 60
+  },
+  {
+    "title": "Elections Console",
+    "websites": ["Repl.it"],
+    "status": "Completed",
+    "types": ["Software"],
+    "langs": [
+      "JavaScript", "Node.js"
+    ],
+    "thumbnail": "/assets/scratchx-logo.png",
+    "description": "",
+    "links": [
+      {
+        "label": "Repl.it Project: ",
+        "url": "https://replit.com/@AmazingMech2418/Elections-Console"
+      }
+    ],
+    "images": ["/assets/primeext/primeext.PNG"],
+    "score": 19
+  },
+  {
+    "title": "Little Man Computer",
+    "websites": ["Repl.it"],
+    "status": "Completed",
+    "types": ["Software"],
+    "langs": [
+      "C"
+    ],
+    "thumbnail": "/assets/scratchx-logo.png",
+    "description": "",
+    "links": [
+      {
+        "label": "Repl.it Project: ",
+        "url": "https://replit.com/@AmazingMech2418/LMC"
+      }
+    ],
+    "images": ["/assets/primeext/primeext.PNG"],
+    "score": 40
+  },
+  {
+    "title": "Conway's Game of Life",
+    "websites": ["Repl.it"],
+    "status": "Completed",
+    "types": ["Software"],
+    "langs": [
+      "BASIC"
+    ],
+    "thumbnail": "/assets/scratchx-logo.png",
+    "description": "",
+    "links": [
+      {
+        "label": "Repl.it Project: ",
+        "url": "https://replit.com/@AmazingMech2418/Conways-Game-of-Life"
+      }
+    ],
+    "images": ["/assets/primeext/primeext.PNG"],
+    "score": 70
+  },
+  {
+    "title": "Pong",
+    "websites": ["Repl.it"],
+    "status": "Completed",
+    "types": ["Software"],
+    "langs": [
+      "BASIC"
+    ],
+    "thumbnail": "/assets/scratchx-logo.png",
+    "description": "",
+    "links": [
+      {
+        "label": "Repl.it Project: ",
+        "url": "https://replit.com/@AmazingMech2418/Pong"
+      }
+    ],
+    "images": ["/assets/primeext/primeext.PNG"],
+    "score": 40
+  },
+  {
+    "title": "Snake",
+    "websites": ["Repl.it"],
+    "status": "Completed",
+    "types": ["Software"],
+    "langs": [
+      "BASIC"
+    ],
+    "thumbnail": "/assets/scratchx-logo.png",
+    "description": "",
+    "links": [
+      {
+        "label": "Repl.it Project: ",
+        "url": "https://replit.com/@AmazingMech2418/Snake"
+      }
+    ],
+    "images": ["/assets/primeext/primeext.PNG"],
+    "score": 40
+  },
+  {
+    "title": "Representative Apportionment",
+    "websites": ["Repl.it"],
+    "status": "Completed",
+    "types": ["Software"],
+    "langs": [
+      "BASIC"
+    ],
+    "thumbnail": "/assets/scratchx-logo.png",
+    "description": "",
+    "links": [
+      {
+        "label": "Repl.it Project: ",
+        "url": "https://replit.com/@AmazingMech2418/Representative-Apportionment"
+      }
+    ],
+    "images": ["/assets/primeext/primeext.PNG"],
+    "score": 65
   }
 ]
