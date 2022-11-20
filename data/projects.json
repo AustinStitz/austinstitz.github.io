@@ -561,5 +561,28 @@
     ],
     "images": [],
     "score": 75
+  },
+  {
+    "title": "Link Programming Language",
+    "websites": ["GitHub"],
+    "status": "In-Progress",
+    "types": ["Software"],
+    "langs": [
+      "JavaScript", "HTML"
+    ],
+    "thumbnail": "/assets/github-logo.jpg",
+    "description": "When I started experimenting with block-based programming language concepts, I thought about the possibility of a programming language based entirely on flowcharts. With the flow of data and the emulation of loops, it would seem relatively easy, as long as you could make the user interface. I then started working on Link, which uses JSON object blocks that are linked together by name in order to run programs. In the future, I hope to create the Flow programming language and the Flow-Link language stack to provide a flowchart-based user interface for programming with these concepts.",
+    "links": [
+      {
+        "label": "GitHub Repository: ",
+        "url": "https://github.com/AmazingMech2418/Link-Programming-Language"
+      },
+      {
+        "label": "Demo Website: ",
+        "url": "https://amazingmech2418.github.io/Link-Programming-Language/"
+      }
+    ],
+    "images": [],
+    "score": 75
   }
 ]
